@@ -36,7 +36,6 @@ class CustomToolbarScrollBehavior(
             }
         }
 
-        @Suppress("detekt.ReturnCount")
         override fun onPostScroll(
             consumed: Offset,
             available: Offset,
@@ -67,7 +66,6 @@ class CustomToolbarScrollBehavior(
             return Offset.Zero
         }
 
-        @Suppress("detekt.MagicNumber")
         override suspend fun onPostFling(consumed: Velocity, available: Velocity): Velocity {
             var result = super.onPostFling(consumed, available)
             // Check if the app bar is partially collapsed/expanded.
@@ -88,7 +86,6 @@ class CustomToolbarScrollBehavior(
 
 }
 
-@Suppress("detekt.MagicNumber")
 private suspend fun flingToolbar(
     state: CustomToolbarScrollState,
     initialVelocity: Float,
@@ -119,7 +116,6 @@ private suspend fun flingToolbar(
     return Velocity(0f, remainingVelocity)
 }
 
-@Suppress("detekt.MagicNumber")
 private suspend fun snapToolbar(state: CustomToolbarScrollState) {
     // In case the app bar motion was stopped in a state where it's partially visible, snap it to
     // the nearest state.

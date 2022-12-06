@@ -291,7 +291,6 @@ private fun AdditionalContentSettings(toolbarDemoSettingsState: MutableState<Too
     }
 }
 
-@Suppress("detekt.LongMethod")
 @Composable
 private fun CentralContentSettings(toolbarDemoSettingsState: MutableState<ToolbarDemoSettings>) {
     with(toolbarDemoSettingsState) {
@@ -325,7 +324,6 @@ private fun CentralContentSettings(toolbarDemoSettingsState: MutableState<Toolba
     }
 }
 
-@Suppress("detekt.LongMethod")
 @Composable
 private fun CollapsingTitleSettings(toolbarDemoSettingsState: MutableState<ToolbarDemoSettings>) {
     with(toolbarDemoSettingsState) {
